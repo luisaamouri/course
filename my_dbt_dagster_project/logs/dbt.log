@@ -1,0 +1,44 @@
+[0m09:52:33.550710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2cef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8cb610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8cb890>]}
+
+
+============================== 09:52:33.553191 | 0046d8d3-4ceb-4b60-b27d-6b92685206d7 ==============================
+[0m09:52:33.553191 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:52:33.553504 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'log_format': 'default', 'introspect': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_path': 'logs', 'static_parser': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/luisa/.dbt', 'printer_width': '80', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'invocation_command': 'dbt test -s mart-fullmoon-reviews', 'warn_error': 'None', 'target_path': 'None'}
+[0m09:52:33.553812 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/luisa/udemy_courses/course/my_dbt_dagster_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:52:33.555108 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.047052085, "process_in_blocks": "0", "process_kernel_time": 0.112702, "process_mem_max_rss": "111656960", "process_out_blocks": "0", "process_user_time": 0.687309}
+[0m09:52:33.555363 [debug] [MainThread]: Command `dbt test` failed at 09:52:33.555317 after 0.05 seconds
+[0m09:52:33.555527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8cec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b78b2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b74bac0>]}
+[0m09:52:33.555688 [debug] [MainThread]: Flushing usage events
+[0m09:52:34.169966 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:53:25.472957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5aef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbab610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbab890>]}
+
+
+============================== 09:53:25.475419 | 6e587126-2665-46ac-adec-f284869fc566 ==============================
+[0m09:53:25.475419 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:53:25.475754 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/luisa/.dbt', 'empty': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'log_path': '/Users/luisa/udemy_courses/course/my_dbt_dagster_project/logs', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'invocation_command': 'dbt test -s mart-fullmoon-reviews', 'debug': 'False', 'no_print': 'None', 'printer_width': '80'}
+[0m09:53:25.477481 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'airbnb'
+[0m09:53:25.478823 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.049824376, "process_in_blocks": "0", "process_kernel_time": 0.11342, "process_mem_max_rss": "112328704", "process_out_blocks": "0", "process_user_time": 0.697151}
+[0m09:53:25.479088 [debug] [MainThread]: Command `dbt test` failed at 09:53:25.479040 after 0.05 seconds
+[0m09:53:25.479261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbb2d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da6b530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da2bbd0>]}
+[0m09:53:25.479422 [debug] [MainThread]: Flushing usage events
+[0m09:53:25.761993 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:53:53.447347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a102f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6ff610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6ff890>]}
+
+
+============================== 09:53:53.449787 | dfc262f1-4bbe-4cc9-ba5c-badfb797b2ad ==============================
+[0m09:53:53.449787 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:53:53.450094 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/luisa/.dbt', 'cache_selected_only': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'write_json': 'True', 'quiet': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test -s mart-fullmoon-reviews', 'empty': 'None', 'printer_width': '80', 'use_colors': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/luisa/udemy_courses/course/my_dbt_dagster_project/logs', 'introspect': 'True', 'partial_parse': 'True'}
+[0m09:53:53.451715 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named '../airbnb'
+[0m09:53:53.453043 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.048291374, "process_in_blocks": "0", "process_kernel_time": 0.12083, "process_mem_max_rss": "111771648", "process_out_blocks": "0", "process_user_time": 0.721096}
+[0m09:53:53.453288 [debug] [MainThread]: Command `dbt test` failed at 09:53:53.453242 after 0.05 seconds
+[0m09:53:53.453454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b706d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5bf530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b57fbd0>]}
+[0m09:53:53.453618 [debug] [MainThread]: Flushing usage events
+[0m09:53:53.760247 [debug] [MainThread]: An error was encountered while trying to flush usage events

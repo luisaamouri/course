@@ -1,0 +1,17 @@
+Running with dbt=1.11.2
+Registered adapter: snowflake=1.11.1
+Found 8 models, 1 analysis, 9 data tests, 1 operation, 2 snapshots, 1 seed, 3 sources, 526 macros, 1 unit test
+
+Concurrency: 1 threads (target='dev')
+
+1 of 1 START hook: airbnb.on-run-start.0 ....................................... [RUN]
+1 of 1 OK hook: airbnb.on-run-start.0 .......................................... [[32mOK[0m in 0.98s]
+
+1 of 1 START sql table model DEV.dim_listings_w_hosts .......................... [RUN]
+1 of 1 OK created sql table model DEV.dim_listings_w_hosts ..................... [[32mSUCCESS 1[0m in 1.56s]
+
+Finished running 1 project hook, 1 table model in 0 hours 0 minutes and 4.30 seconds (4.30s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2

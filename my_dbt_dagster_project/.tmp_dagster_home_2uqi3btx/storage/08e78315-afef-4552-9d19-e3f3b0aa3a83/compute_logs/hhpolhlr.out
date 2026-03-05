@@ -1,0 +1,51 @@
+Running with dbt=1.11.2
+Registered adapter: snowflake=1.11.1
+Found 8 models, 1 analysis, 9 data tests, 1 operation, 2 snapshots, 1 seed, 3 sources, 526 macros, 1 unit test
+
+Concurrency: 1 threads (target='dev')
+
+1 of 1 START hook: airbnb.on-run-start.0 ....................................... [RUN]
+1 of 1 OK hook: airbnb.on-run-start.0 .......................................... [[32mOK[0m in 1.26s]
+
+1 of 21 START seed file DEV.seed_full_moon_dates ............................... [RUN]
+1 of 21 OK loaded seed file DEV.seed_full_moon_dates ........................... [[32mINSERT 272[0m in 1.72s]
+2 of 21 START snapshot DEV.scd_raw_hosts ....................................... [RUN]
+2 of 21 OK snapshotted DEV.scd_raw_hosts ....................................... [[32mSUCCESS 0[0m in 3.13s]
+3 of 21 START snapshot DEV.scd_raw_listings .................................... [RUN]
+3 of 21 OK snapshotted DEV.scd_raw_listings .................................... [[32mSUCCESS 0[0m in 3.05s]
+4 of 21 START sql view model DEV.dim_hosts_cleansed ............................ [RUN]
+4 of 21 OK created sql view model DEV.dim_hosts_cleansed ....................... [[32mSUCCESS 1[0m in 1.24s]
+5 of 21 START sql view model DEV.dim_listings_cleansed ......................... [RUN]
+5 of 21 OK created sql view model DEV.dim_listings_cleansed .................... [[32mSUCCESS 1[0m in 0.83s]
+6 of 21 START sql incremental model DEV.fct_reviews ............................ [RUN]
+6 of 21 OK created sql incremental model DEV.fct_reviews ....................... [[32mSUCCESS 0[0m in 2.20s]
+7 of 21 START test accepted_values_dim_listings_cleansed_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room  [RUN]
+7 of 21 PASS accepted_values_dim_listings_cleansed_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room  [[32mPASS[0m in 0.82s]
+8 of 21 START test dim_listings_minimum_nights ................................. [RUN]
+8 of 21 PASS dim_listings_minimum_nights ....................................... [[32mPASS[0m in 0.75s]
+9 of 21 START test minimum_row_count_dim_listings_cleansed_1000 ................ [RUN]
+9 of 21 PASS minimum_row_count_dim_listings_cleansed_1000 ...................... [[32mPASS[0m in 0.72s]
+10 of 21 START test not_null_dim_listings_cleansed_host_id ..................... [RUN]
+10 of 21 PASS not_null_dim_listings_cleansed_host_id ........................... [[32mPASS[0m in 0.71s]
+11 of 21 START test not_null_dim_listings_cleansed_listing_id .................. [RUN]
+11 of 21 PASS not_null_dim_listings_cleansed_listing_id ........................ [[32mPASS[0m in 0.74s]
+12 of 21 START test positive_values_dim_listings_cleansed_minimum_nights ....... [RUN]
+12 of 21 PASS positive_values_dim_listings_cleansed_minimum_nights ............. [[32mPASS[0m in 0.88s]
+13 of 21 START test relationships_dim_listings_cleansed_host_id__host_id__ref_dim_hosts_cleansed_  [RUN]
+13 of 21 PASS relationships_dim_listings_cleansed_host_id__host_id__ref_dim_hosts_cleansed_  [[32mPASS[0m in 0.86s]
+14 of 21 START test unique_dim_listings_cleansed_listing_id .................... [RUN]
+14 of 21 PASS unique_dim_listings_cleansed_listing_id .......................... [[32mPASS[0m in 0.74s]
+16 of 21 START unit_test mart_fullmoon_reviews::unittest_fullmoon_matcher ...... [RUN]
+16 of 21 PASS mart_fullmoon_reviews::unittest_fullmoon_matcher ................. [[32mPASS[0m in 1.04s]
+18 of 21 START sql table model DEV.mart_fullmoon_reviews ....................... [RUN]
+18 of 21 OK created sql table model DEV.mart_fullmoon_reviews .................. [[32mSUCCESS 1[0m in 2.60s]
+15 of 21 START test consistent_created_at ...................................... [RUN]
+15 of 21 PASS consistent_created_at ............................................ [[32mPASS[0m in 0.84s]
+17 of 21 START sql table model DEV.dim_listings_w_hosts ........................ [RUN]
+17 of 21 OK created sql table model DEV.dim_listings_w_hosts ................... [[32mSUCCESS 1[0m in 1.55s]
+
+Finished running 1 incremental model, 1 project hook, 1 seed, 2 snapshots, 2 table models, 9 data tests, 1 unit test, 2 view models in 0 hours 0 minutes and 27.64 seconds (27.64s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=19 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=19
